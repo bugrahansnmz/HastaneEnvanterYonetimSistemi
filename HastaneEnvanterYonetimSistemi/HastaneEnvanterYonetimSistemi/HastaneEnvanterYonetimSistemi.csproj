@@ -73,16 +73,16 @@
     <Compile Include="Model\EnvanterListesi_Result.cs">
       <DependentUpon>EnvanterDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="FrmEnvanter.cs">
+    <Compile Include="Form\FrmEnvanter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmEnvanter.Designer.cs">
+    <Compile Include="Form\FrmEnvanter.Designer.cs">
       <DependentUpon>FrmEnvanter.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmKullaniciGiris.cs">
+    <Compile Include="Form\FrmKullaniciGiris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmKullaniciGiris.Designer.cs">
+    <Compile Include="Form\FrmKullaniciGiris.Designer.cs">
       <DependentUpon>FrmKullaniciGiris.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -108,10 +108,10 @@
     <Compile Include="Model\TBLYetki.cs">
       <DependentUpon>EnvanterDBModel.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FrmEnvanter.resx">
+    <EmbeddedResource Include="Form\FrmEnvanter.resx">
       <DependentUpon>FrmEnvanter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmKullaniciGiris.resx">
+    <EmbeddedResource Include="Form\FrmKullaniciGiris.resx">
       <DependentUpon>FrmKullaniciGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
