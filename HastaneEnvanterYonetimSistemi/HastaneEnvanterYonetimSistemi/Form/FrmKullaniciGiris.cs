@@ -43,7 +43,7 @@ namespace HastaneEnvanterYonetimSistemi
             }
             else if (SefKullaniciKontrol(TxtKullaniciAdi.Text, TxtSifre.Text))
             {
-                MessageBox.Show("Sef Girişi");
+                MessageBox.Show("Şef Girişi");
                 this.Hide();
             }
             else

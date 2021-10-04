@@ -45,7 +45,7 @@ namespace HastaneEnvanterYonetimSistemi
             this.TxtKullaniciAdi.BackColor = System.Drawing.Color.Gray;
             this.TxtKullaniciAdi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtKullaniciAdi.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtKullaniciAdi.Location = new System.Drawing.Point(169, 37);
+            this.TxtKullaniciAdi.Location = new System.Drawing.Point(251, 91);
             this.TxtKullaniciAdi.Name = "TxtKullaniciAdi";
             this.TxtKullaniciAdi.Size = new System.Drawing.Size(203, 22);
             this.TxtKullaniciAdi.TabIndex = 0;
@@ -55,7 +55,7 @@ namespace HastaneEnvanterYonetimSistemi
             this.TxtSifre.BackColor = System.Drawing.Color.Gray;
             this.TxtSifre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtSifre.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.TxtSifre.Location = new System.Drawing.Point(169, 83);
+            this.TxtSifre.Location = new System.Drawing.Point(251, 137);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(203, 22);
             this.TxtSifre.TabIndex = 1;
@@ -65,7 +65,7 @@ namespace HastaneEnvanterYonetimSistemi
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Perpetua", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(198, 18);
+            this.label1.Location = new System.Drawing.Point(189, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(205, 32);
             this.label1.TabIndex = 2;
@@ -78,7 +78,7 @@ namespace HastaneEnvanterYonetimSistemi
             this.BtnGirisYap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGirisYap.Font = new System.Drawing.Font("Perpetua", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGirisYap.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtnGirisYap.Location = new System.Drawing.Point(169, 131);
+            this.BtnGirisYap.Location = new System.Drawing.Point(251, 185);
             this.BtnGirisYap.Name = "BtnGirisYap";
             this.BtnGirisYap.Size = new System.Drawing.Size(203, 42);
             this.BtnGirisYap.TabIndex = 3;
@@ -93,7 +93,7 @@ namespace HastaneEnvanterYonetimSistemi
             this.BtnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCikis.Font = new System.Drawing.Font("Perpetua", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCikis.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtnCikis.Location = new System.Drawing.Point(37, 131);
+            this.BtnCikis.Location = new System.Drawing.Point(119, 185);
             this.BtnCikis.Name = "BtnCikis";
             this.BtnCikis.Size = new System.Drawing.Size(122, 42);
             this.BtnCikis.TabIndex = 4;
@@ -107,7 +107,7 @@ namespace HastaneEnvanterYonetimSistemi
             this.label2.BackColor = System.Drawing.Color.DarkGray;
             this.label2.Font = new System.Drawing.Font("Perpetua", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(71, 42);
+            this.label2.Location = new System.Drawing.Point(153, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 20);
             this.label2.TabIndex = 5;
@@ -119,7 +119,7 @@ namespace HastaneEnvanterYonetimSistemi
             this.label3.BackColor = System.Drawing.Color.DarkGray;
             this.label3.Font = new System.Drawing.Font("Perpetua", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(118, 88);
+            this.label3.Location = new System.Drawing.Point(200, 142);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 20);
             this.label3.TabIndex = 6;
@@ -129,14 +129,15 @@ namespace HastaneEnvanterYonetimSistemi
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkGray;
             this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.TxtKullaniciAdi);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.TxtSifre);
             this.panel1.Controls.Add(this.BtnCikis);
             this.panel1.Controls.Add(this.BtnGirisYap);
-            this.panel1.Location = new System.Drawing.Point(100, 69);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(459, 211);
+            this.panel1.Size = new System.Drawing.Size(612, 285);
             this.panel1.TabIndex = 7;
             // 
             // FrmKullaniciGiris
@@ -146,7 +147,6 @@ namespace HastaneEnvanterYonetimSistemi
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(636, 309);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmKullaniciGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -154,7 +154,6 @@ namespace HastaneEnvanterYonetimSistemi
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
