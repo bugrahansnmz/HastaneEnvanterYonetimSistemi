@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HastaneEnvanterYonetimSistemi
+namespace HastaneEnvanterYonetimSistemi.Model
 {
     using System;
     using System.Collections.Generic;

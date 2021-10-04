@@ -55,22 +55,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnvanterDBModel.Context.cs">
+    <Compile Include="Model\EnvanterDBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EnvanterDBModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="EnvanterDBModel.cs">
+    <Compile Include="Model\EnvanterDBModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EnvanterDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="EnvanterDBModel.Designer.cs">
+    <Compile Include="Model\EnvanterDBModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EnvanterDBModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="EnvanterListesi_Result.cs">
+    <Compile Include="Model\EnvanterListesi_Result.cs">
       <DependentUpon>EnvanterDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="FrmEnvanter.cs">
@@ -87,25 +87,25 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TBLBilgiIslem.cs">
+    <Compile Include="Model\TBLBilgiIslem.cs">
       <DependentUpon>EnvanterDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="TBLEnvanter.cs">
+    <Compile Include="Model\TBLEnvanter.cs">
       <DependentUpon>EnvanterDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="TBLHastaneBolum.cs">
+    <Compile Include="Model\TBLHastaneBolum.cs">
       <DependentUpon>EnvanterDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="TBLKullanıcı.cs">
+    <Compile Include="Model\TBLKullanıcı.cs">
       <DependentUpon>EnvanterDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="TBLPersonel.cs">
+    <Compile Include="Model\TBLPersonel.cs">
       <DependentUpon>EnvanterDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="TBLTeknikServis.cs">
+    <Compile Include="Model\TBLTeknikServis.cs">
       <DependentUpon>EnvanterDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="TBLYetki.cs">
+    <Compile Include="Model\TBLYetki.cs">
       <DependentUpon>EnvanterDBModel.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FrmEnvanter.resx">
@@ -123,11 +123,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EntityDeploy Include="EnvanterDBModel.edmx">
+    <EntityDeploy Include="Model\EnvanterDBModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>EnvanterDBModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="EnvanterDBModel.edmx.diagram">
+    <None Include="Model\EnvanterDBModel.edmx.diagram">
       <DependentUpon>EnvanterDBModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -145,12 +145,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="EnvanterDBModel.Context.tt">
+    <Content Include="Model\EnvanterDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>EnvanterDBModel.Context.cs</LastGenOutput>
       <DependentUpon>EnvanterDBModel.edmx</DependentUpon>
     </Content>
-    <Content Include="EnvanterDBModel.tt">
+    <Content Include="Model\EnvanterDBModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>EnvanterDBModel.edmx</DependentUpon>
       <LastGenOutput>EnvanterDBModel.cs</LastGenOutput>

@@ -7,21 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HastaneEnvanterYonetimSistemi
+namespace HastaneEnvanterYonetimSistemi.Model
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class TBLBilgiIslem
+    public partial class TBLHastaneBolum
     {
-        public int IslemID { get; set; }
-        public Nullable<int> EnvanterId { get; set; }
-        public string UrunIsmi { get; set; }
-        public Nullable<System.DateTime> GirisTarihi { get; set; }
-        public Nullable<System.DateTime> CikisTarihi { get; set; }
-        public string GelisSebebi { get; set; }
-        public string Durum { get; set; }
+        public int BolumID { get; set; }
+        public Nullable<int> PersonelId { get; set; }
+        public Nullable<int> BagliEnvanter { get; set; }
+        public string BolumIsmi { get; set; }
+        public Nullable<int> PersonelSayisi { get; set; }
+        public Nullable<int> DahiliNo { get; set; }
     
         public virtual TBLEnvanter TBLEnvanter { get; set; }
+        public virtual TBLPersonel TBLPersonel { get; set; }
     }
 }

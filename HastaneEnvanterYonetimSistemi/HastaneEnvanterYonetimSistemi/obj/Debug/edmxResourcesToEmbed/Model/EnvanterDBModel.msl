@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbHEYSModelStoreContainer" CdmEntityContainer="DbHEYSEntities">
+    <EntitySetMapping Name="TBLBilgiIslem">
+      <EntityTypeMapping TypeName="DbHEYSModel.TBLBilgiIslem">
+        <MappingFragment StoreEntitySet="TBLBilgiIslem">
+          <ScalarProperty Name="IslemID" ColumnName="IslemID" />
+          <ScalarProperty Name="EnvanterId" ColumnName="EnvanterId" />
+          <ScalarProperty Name="UrunIsmi" ColumnName="UrunIsmi" />
+          <ScalarProperty Name="GirisTarihi" ColumnName="GirisTarihi" />
+          <ScalarProperty Name="CikisTarihi" ColumnName="CikisTarihi" />
+          <ScalarProperty Name="GelisSebebi" ColumnName="GelisSebebi" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLEnvanter">
+      <EntityTypeMapping TypeName="DbHEYSModel.TBLEnvanter">
+        <MappingFragment StoreEntitySet="TBLEnvanter">
+          <ScalarProperty Name="EnvanterID" ColumnName="EnvanterID" />
+          <ScalarProperty Name="UrunIsmi" ColumnName="UrunIsmi" />
+          <ScalarProperty Name="StokAdet" ColumnName="StokDurum" />
+          <ScalarProperty Name="GirisTarihi" ColumnName="GirisTarihi" />
+          <ScalarProperty Name="BagliPersonel" ColumnName="BagliPersonel" />
+          <ScalarProperty Name="BagliBolum" ColumnName="BagliBolum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLHastaneBolum">
+      <EntityTypeMapping TypeName="DbHEYSModel.TBLHastaneBolum">
+        <MappingFragment StoreEntitySet="TBLHastaneBolum">
+          <ScalarProperty Name="BolumID" ColumnName="BolumID" />
+          <ScalarProperty Name="PersonelId" ColumnName="PersonelId" />
+          <ScalarProperty Name="BagliEnvanter" ColumnName="BagliEnvanter" />
+          <ScalarProperty Name="BolumIsmi" ColumnName="BolumIsmi" />
+          <ScalarProperty Name="PersonelSayisi" ColumnName="PersonelSayisi" />
+          <ScalarProperty Name="DahiliNo" ColumnName="DahiliNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLKullanıcı">
+      <EntityTypeMapping TypeName="DbHEYSModel.TBLKullanıcı">
+        <MappingFragment StoreEntitySet="TBLKullanıcı">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="YetkiDurumu" ColumnName="YetkiDurumu" />
+          <ScalarProperty Name="TCNo" ColumnName="TCNo" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Parola" ColumnName="Parola" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="DahiliNo" ColumnName="DahiliNo" />
+          <ScalarProperty Name="CalistigiBirim" ColumnName="CalistigiBirim" />
+          <ScalarProperty Name="Fotograf" ColumnName="Fotograf" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLPersonel">
+      <EntityTypeMapping TypeName="DbHEYSModel.TBLPersonel">
+        <MappingFragment StoreEntitySet="TBLPersonel">
+          <ScalarProperty Name="PersonelID" ColumnName="PersonelID" />
+          <ScalarProperty Name="BagliEnvanter" ColumnName="BagliEnvanter" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="Bolum" ColumnName="Bolum" />
+          <ScalarProperty Name="Birim" ColumnName="Birim" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLTeknikServis">
+      <EntityTypeMapping TypeName="DbHEYSModel.TBLTeknikServis">
+        <MappingFragment StoreEntitySet="TBLTeknikServis">
+          <ScalarProperty Name="ArizaID" ColumnName="ArizaID" />
+          <ScalarProperty Name="EnvanterId" ColumnName="EnvanterId" />
+          <ScalarProperty Name="UrunIsmi" ColumnName="UrunIsmi" />
+          <ScalarProperty Name="GelisTarihi" ColumnName="GelisTarihi" />
+          <ScalarProperty Name="CikisTarihi" ColumnName="CikisTarihi" />
+          <ScalarProperty Name="GelisSebebi" ColumnName="GelisSebebi" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLYetki">
+      <EntityTypeMapping TypeName="DbHEYSModel.TBLYetki">
+        <MappingFragment StoreEntitySet="TBLYetki">
+          <ScalarProperty Name="YetkiId" ColumnName="YetkiId" />
+          <ScalarProperty Name="YetkiDurum" ColumnName="YetkiDurum" />
+          <ScalarProperty Name="Yetki" ColumnName="Yetki" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="EnvanterListesi" FunctionName="DbHEYSModel.Store.EnvanterListesi">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DbHEYSModel.EnvanterListesi_Result">
+          <ScalarProperty Name="EnvanterID" ColumnName="EnvanterID" />
+          <ScalarProperty Name="UrunIsmi" ColumnName="UrunIsmi" />
+          <ScalarProperty Name="StokDurum" ColumnName="StokDurum" />
+          <ScalarProperty Name="GirisTarihi" ColumnName="GirisTarihi" />
+          <ScalarProperty Name="Bağlı_Personel" ColumnName="Bağlı Personel" />
+          <ScalarProperty Name="Bölüm_İsmi" ColumnName="Bölüm İsmi" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
