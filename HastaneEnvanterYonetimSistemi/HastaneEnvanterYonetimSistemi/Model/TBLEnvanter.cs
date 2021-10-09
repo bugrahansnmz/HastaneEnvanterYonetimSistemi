@@ -29,6 +29,7 @@ namespace HastaneEnvanterYonetimSistemi.Model
         public Nullable<System.DateTime> GirisTarihi { get; set; }
         public string BagliPersonel { get; set; }
         public string BagliBolum { get; set; }
+        public string MalzemeDurum { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBLBilgiIslem> TBLBilgiIslem { get; set; }

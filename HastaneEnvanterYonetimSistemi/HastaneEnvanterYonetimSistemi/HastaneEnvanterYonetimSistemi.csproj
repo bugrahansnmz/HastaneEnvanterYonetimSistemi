@@ -70,9 +70,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EnvanterDBModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Model\EnvanterListesi_Result.cs">
-      <DependentUpon>EnvanterDBModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Form\FrmEnvanter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +81,12 @@
     </Compile>
     <Compile Include="Form\FrmKullaniciGiris.Designer.cs">
       <DependentUpon>FrmKullaniciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EnvanterListele_Result.cs">
+      <DependentUpon>EnvanterDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EnvanterListesi_Result.cs">
+      <DependentUpon>EnvanterDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

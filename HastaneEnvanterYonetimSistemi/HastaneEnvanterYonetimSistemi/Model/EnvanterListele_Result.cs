@@ -10,19 +10,15 @@
 namespace HastaneEnvanterYonetimSistemi.Model
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class TBLBilgiIslem
+    public partial class EnvanterListele_Result
     {
-        public int IslemID { get; set; }
-        public Nullable<int> EnvanterId { get; set; }
+        public int EnvanterID { get; set; }
         public string UrunIsmi { get; set; }
+        public Nullable<int> StokDurum { get; set; }
+        public string MalzemeDurum { get; set; }
         public Nullable<System.DateTime> GirisTarihi { get; set; }
-        public Nullable<System.DateTime> CikisTarihi { get; set; }
-        public string GelisSebebi { get; set; }
-        public string Durum { get; set; }
-        public Nullable<int> Adet { get; set; }
-    
-        public virtual TBLEnvanter TBLEnvanter { get; set; }
+        public string Bağlı_Personel { get; set; }
+        public string Bölüm_İsmi { get; set; }
     }
 }

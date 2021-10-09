@@ -7,10 +7,11 @@
     <Property Name="IslemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="EnvanterId" Type="int" />
     <Property Name="UrunIsmi" Type="varchar" MaxLength="50" />
+    <Property Name="Adet" Type="int" />
     <Property Name="GirisTarihi" Type="date" />
-    <Property Name="CikisTarihi" Type="date" />
     <Property Name="GelisSebebi" Type="varchar" MaxLength="50" />
     <Property Name="Durum" Type="varchar" MaxLength="50" />
+    <Property Name="CikisTarihi" Type="date" />
   </EntityType>
   <EntityType Name="TBLEnvanter">
     <Key>
@@ -19,6 +20,7 @@
     <Property Name="EnvanterID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="UrunIsmi" Type="varchar" MaxLength="50" />
     <Property Name="StokDurum" Type="int" />
+    <Property Name="MalzemeDurum" Type="varchar" MaxLength="50" />
     <Property Name="GirisTarihi" Type="date" />
     <Property Name="BagliPersonel" Type="varchar" MaxLength="50" />
     <Property Name="BagliBolum" Type="varchar" MaxLength="50" />
@@ -69,10 +71,11 @@
     <Property Name="ArizaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="EnvanterId" Type="int" />
     <Property Name="UrunIsmi" Type="varchar" MaxLength="50" />
+    <Property Name="Adet" Type="int" />
     <Property Name="GelisTarihi" Type="date" />
-    <Property Name="CikisTarihi" Type="date" />
     <Property Name="GelisSebebi" Type="varchar" MaxLength="50" />
     <Property Name="Durum" Type="varchar" MaxLength="50" />
+    <Property Name="CikisTarihi" Type="date" />
   </EntityType>
   <EntityType Name="TBLYetki">
     <Key>
@@ -154,7 +157,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Function Name="EnvanterListesi" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="EnvanterListele" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="DbHEYSModelStoreContainer">
     <EntitySet Name="TBLBilgiIslem" EntityType="Self.TBLBilgiIslem" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TBLEnvanter" EntityType="Self.TBLEnvanter" Schema="dbo" store:Type="Tables" />

@@ -39,5 +39,10 @@ namespace HastaneEnvanterYonetimSistemi.Model
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<EnvanterListesi_Result>("EnvanterListesi");
         }
+    
+        public virtual ObjectResult<EnvanterListele_Result> EnvanterListele()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<EnvanterListele_Result>("EnvanterListele");
+        }
     }
 }

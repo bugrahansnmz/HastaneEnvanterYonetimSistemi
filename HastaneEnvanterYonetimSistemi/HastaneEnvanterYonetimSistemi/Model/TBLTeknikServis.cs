@@ -21,6 +21,7 @@ namespace HastaneEnvanterYonetimSistemi.Model
         public Nullable<System.DateTime> CikisTarihi { get; set; }
         public string GelisSebebi { get; set; }
         public string Durum { get; set; }
+        public Nullable<int> Adet { get; set; }
     
         public virtual TBLEnvanter TBLEnvanter { get; set; }
     }

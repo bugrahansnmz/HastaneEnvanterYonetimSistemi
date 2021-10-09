@@ -12,6 +12,7 @@
     <Property Name="GelisSebebi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Durum" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="TBLEnvanter" Relationship="Self.FK_TBLBilgiIslem_TBLEnvanter" FromRole="TBLBilgiIslem" ToRole="TBLEnvanter" />
+    <Property Name="Adet" Type="Int32" />
   </EntityType>
   <EntityType Name="TBLEnvanter">
     <Key>
@@ -27,6 +28,7 @@
     <NavigationProperty Name="TBLHastaneBolum" Relationship="Self.FK_TBLHastaneBolum_TBLEnvanter" FromRole="TBLEnvanter" ToRole="TBLHastaneBolum" />
     <NavigationProperty Name="TBLPersonel" Relationship="Self.FK_TBLPersonel_TBLEnvanter" FromRole="TBLEnvanter" ToRole="TBLPersonel" />
     <NavigationProperty Name="TBLTeknikServis" Relationship="Self.FK_TBLTeknikServis_TBLEnvanter" FromRole="TBLEnvanter" ToRole="TBLTeknikServis" />
+    <Property Name="MalzemeDurum" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="TBLHastaneBolum">
     <Key>
@@ -84,6 +86,7 @@
     <Property Name="GelisSebebi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Durum" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="TBLEnvanter" Relationship="Self.FK_TBLTeknikServis_TBLEnvanter" FromRole="TBLTeknikServis" ToRole="TBLEnvanter" />
+    <Property Name="Adet" Type="Int32" />
   </EntityType>
   <EntityType Name="TBLYetki">
     <Key>
@@ -199,11 +202,21 @@
       <End Role="TBLKullanıcı" EntitySet="TBLKullanıcı" />
     </AssociationSet>
     <FunctionImport Name="EnvanterListesi" ReturnType="Collection(DbHEYSModel.EnvanterListesi_Result)" />
+    <FunctionImport Name="EnvanterListele" ReturnType="Collection(DbHEYSModel.EnvanterListele_Result)" />
   </EntityContainer>
   <ComplexType Name="EnvanterListesi_Result">
     <Property Type="Int32" Name="EnvanterID" Nullable="false" />
     <Property Type="String" Name="UrunIsmi" Nullable="true" MaxLength="50" />
     <Property Type="Int32" Name="StokDurum" Nullable="true" />
+    <Property Type="DateTime" Name="GirisTarihi" Nullable="true" />
+    <Property Type="String" Name="Bağlı_Personel" Nullable="true" MaxLength="101" />
+    <Property Type="String" Name="Bölüm_İsmi" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="EnvanterListele_Result">
+    <Property Type="Int32" Name="EnvanterID" Nullable="false" />
+    <Property Type="String" Name="UrunIsmi" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="StokDurum" Nullable="true" />
+    <Property Type="String" Name="MalzemeDurum" Nullable="true" MaxLength="50" />
     <Property Type="DateTime" Name="GirisTarihi" Nullable="true" />
     <Property Type="String" Name="Bağlı_Personel" Nullable="true" MaxLength="101" />
     <Property Type="String" Name="Bölüm_İsmi" Nullable="true" MaxLength="50" />

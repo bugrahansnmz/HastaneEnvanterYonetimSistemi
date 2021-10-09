@@ -4,6 +4,7 @@
     <EntitySetMapping Name="TBLBilgiIslem">
       <EntityTypeMapping TypeName="DbHEYSModel.TBLBilgiIslem">
         <MappingFragment StoreEntitySet="TBLBilgiIslem">
+          <ScalarProperty Name="Adet" ColumnName="Adet" />
           <ScalarProperty Name="IslemID" ColumnName="IslemID" />
           <ScalarProperty Name="EnvanterId" ColumnName="EnvanterId" />
           <ScalarProperty Name="UrunIsmi" ColumnName="UrunIsmi" />
@@ -17,6 +18,7 @@
     <EntitySetMapping Name="TBLEnvanter">
       <EntityTypeMapping TypeName="DbHEYSModel.TBLEnvanter">
         <MappingFragment StoreEntitySet="TBLEnvanter">
+          <ScalarProperty Name="MalzemeDurum" ColumnName="MalzemeDurum" />
           <ScalarProperty Name="EnvanterID" ColumnName="EnvanterID" />
           <ScalarProperty Name="UrunIsmi" ColumnName="UrunIsmi" />
           <ScalarProperty Name="StokAdet" ColumnName="StokDurum" />
@@ -71,6 +73,7 @@
     <EntitySetMapping Name="TBLTeknikServis">
       <EntityTypeMapping TypeName="DbHEYSModel.TBLTeknikServis">
         <MappingFragment StoreEntitySet="TBLTeknikServis">
+          <ScalarProperty Name="Adet" ColumnName="Adet" />
           <ScalarProperty Name="ArizaID" ColumnName="ArizaID" />
           <ScalarProperty Name="EnvanterId" ColumnName="EnvanterId" />
           <ScalarProperty Name="UrunIsmi" ColumnName="UrunIsmi" />
@@ -90,12 +93,13 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <FunctionImportMapping FunctionImportName="EnvanterListesi" FunctionName="DbHEYSModel.Store.EnvanterListesi">
+    <FunctionImportMapping FunctionImportName="EnvanterListele" FunctionName="DbHEYSModel.Store.EnvanterListele">
       <ResultMapping>
-        <ComplexTypeMapping TypeName="DbHEYSModel.EnvanterListesi_Result">
+        <ComplexTypeMapping TypeName="DbHEYSModel.EnvanterListele_Result">
           <ScalarProperty Name="EnvanterID" ColumnName="EnvanterID" />
           <ScalarProperty Name="UrunIsmi" ColumnName="UrunIsmi" />
           <ScalarProperty Name="StokDurum" ColumnName="StokDurum" />
+          <ScalarProperty Name="MalzemeDurum" ColumnName="MalzemeDurum" />
           <ScalarProperty Name="GirisTarihi" ColumnName="GirisTarihi" />
           <ScalarProperty Name="Bağlı_Personel" ColumnName="Bağlı Personel" />
           <ScalarProperty Name="Bölüm_İsmi" ColumnName="Bölüm İsmi" />
