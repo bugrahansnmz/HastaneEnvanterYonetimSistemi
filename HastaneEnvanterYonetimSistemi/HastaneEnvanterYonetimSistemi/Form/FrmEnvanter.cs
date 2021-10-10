@@ -78,6 +78,7 @@ namespace HastaneEnvanterYonetimSistemi
             db.TBLEnvanter.Add(envanter);
             db.SaveChanges();
             MessageBox.Show("Eklendi!");
+
             EnvanterListele();
         }
 
