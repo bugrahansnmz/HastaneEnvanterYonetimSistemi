@@ -22,7 +22,6 @@ namespace HastaneEnvanterYonetimSistemi.Model
         public string GelisSebebi { get; set; }
         public string Durum { get; set; }
         public Nullable<int> Adet { get; set; }
-    
         public virtual TBLEnvanter TBLEnvanter { get; set; }
     }
 }
