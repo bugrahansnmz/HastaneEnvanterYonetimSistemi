@@ -29,9 +29,9 @@ namespace HastaneEnvanterYonetimSistemi
             if (KullaniciKontrol(TxtKullaniciAdi.Text, TxtSifre.Text))
             {
                 MessageBox.Show("Giriş Başarılı!");
+                FrmEnvanter envanter = new FrmEnvanter();
                 this.Hide();
-                ((FrmEnvanter)this.ParentForm).TabControlEnvanter.Visible = true;
-                ((FrmEnvanter)this.ParentForm).FrmEnvanter_Load(sender, e);
+                envanter.Show();
             }
             else
             {

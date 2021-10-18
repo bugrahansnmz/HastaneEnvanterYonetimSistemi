@@ -16,7 +16,7 @@ namespace HastaneEnvanterYonetimSistemi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmEnvanter());
+            Application.Run(new FrmKullaniciGiris());
         }
     }
 }

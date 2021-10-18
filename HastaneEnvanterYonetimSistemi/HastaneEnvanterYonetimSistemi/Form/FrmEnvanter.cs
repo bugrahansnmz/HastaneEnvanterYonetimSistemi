@@ -21,10 +21,9 @@ namespace HastaneEnvanterYonetimSistemi
 
         public void FrmEnvanter_Load(object sender, EventArgs e)
         {
-            FrmKullaniciGiris frm = new FrmKullaniciGiris();
-            frm.MdiParent = this;
-            frm.Show();
             EnvanterListele();
+            TeknikServisListele();
+            BilgiIslemListele();
             if (TabControlEnvanter.Visible == true)
             {
                 if (FrmKullaniciGiris.USER.YetkiDurumu == 2)
@@ -65,7 +64,15 @@ namespace HastaneEnvanterYonetimSistemi
         {
             DataGridEnvanter.DataSource = db.EnvanterListele();
         }
-
+        public void TeknikServisListele()
+        {
+            DataGridTeknikServis.DataSource = db.TBLTeknikServis.ToList();
+            DataGridTeknikServis.Columns[9].Visible = false;
+        }
+        public void BilgiIslemListele()
+        {
+            DataGridBilgiIslem.DataSource = db.TBLBilgiIslem.ToList();
+        }
         private void btnEnvanterEkle_Click(object sender, EventArgs e)
         {
             TBLEnvanter envanter = new TBLEnvanter();
@@ -101,6 +108,7 @@ namespace HastaneEnvanterYonetimSistemi
                 teknikServis.GelisSebebi = tbArizaGonderimSebebi.Text;
                 db.TBLTeknikServis.Add(teknikServis);
                 db.SaveChanges();
+                TeknikServisListele();
             }
             else if (cbArizaBirim.SelectedItem.ToString() == "Bilgi İşlem")
             {
@@ -111,6 +119,7 @@ namespace HastaneEnvanterYonetimSistemi
                 bilgiIslem.GelisSebebi = tbArizaGonderimSebebi.Text;
                 db.TBLBilgiIslem.Add(bilgiIslem);
                 db.SaveChanges();
+                BilgiIslemListele();
             }
         }
 
@@ -118,6 +127,14 @@ namespace HastaneEnvanterYonetimSistemi
         {
             tbArizaUrunİsim.Text = DataGridEnvanter.CurrentRow.Cells[2].Value.ToString();
             tbArizaAdet.Text = DataGridEnvanter.CurrentRow.Cells[3].Value.ToString();
+            if (e.ColumnIndex == 0)
+            {
+                int id = Convert.ToInt32(DataGridEnvanter.CurrentRow.Cells[1].Value.ToString());
+                DeleteMusteri(id);
+                EnvanterListele();
+                tbArizaUrunİsim.Text = "";
+                tbArizaAdet.Text = "";
+            }
         }
 
         private void btnArizaTemizle_Click(object sender, EventArgs e)
@@ -125,5 +142,15 @@ namespace HastaneEnvanterYonetimSistemi
             tbArizaUrunİsim.Text = "";
             tbArizaAdet.Text = "";
         }
+        public void DeleteMusteri(int id)
+        {
+            
+            var sorgu = db.TBLEnvanter.Find(id);
+            db.TBLEnvanter.Remove(sorgu);
+            db.SaveChanges();
+            MessageBox.Show(id+"nolu envanter silindi. ");
+        }
+
+       
     }
 }

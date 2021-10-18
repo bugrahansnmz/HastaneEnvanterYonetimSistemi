@@ -29,9 +29,9 @@ namespace HastaneEnvanterYonetimSistemi
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TabControlEnvanter = new System.Windows.Forms.TabControl();
             this.tabEnvanter = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -62,22 +62,94 @@ namespace HastaneEnvanterYonetimSistemi
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtpArizaTarih = new System.Windows.Forms.DateTimePicker();
             this.btnArizaGonder = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.btnArizaTemizle = new System.Windows.Forms.Button();
             this.cbArizaBirim = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.tbArizaGonderimSebebi = new System.Windows.Forms.TextBox();
             this.tbArizaUrunİsim = new System.Windows.Forms.TextBox();
             this.tbArizaAdet = new System.Windows.Forms.TextBox();
+            this.tbArizaGonderimSebebi = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.tabTeknikServis = new System.Windows.Forms.TabPage();
+            this.DataGridTeknikServis = new System.Windows.Forms.DataGridView();
+            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.cbTSArizaCikisDurum = new System.Windows.Forms.ComboBox();
+            this.dtpTSArizaTarih = new System.Windows.Forms.DateTimePicker();
+            this.btnTSArizaCikis = new System.Windows.Forms.Button();
+            this.btnTSArizaTemizle = new System.Windows.Forms.Button();
+            this.cbTSArizaGonderilecekBirim = new System.Windows.Forms.ComboBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.tbTSArizaCikis = new System.Windows.Forms.TextBox();
+            this.tbTSArizaAdet = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.cbTeknikServisMalzemeDurum = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dtpTeknikServisTarih = new System.Windows.Forms.DateTimePicker();
+            this.btnTeknikServisTemizle = new System.Windows.Forms.Button();
+            this.btnTeknikServisEkle = new System.Windows.Forms.Button();
+            this.tbTeknikServisAdet = new System.Windows.Forms.TextBox();
+            this.tbTeknikServisSorumluPersonel = new System.Windows.Forms.TextBox();
+            this.tbTeknikServisSorumluBolum = new System.Windows.Forms.TextBox();
+            this.tbTeknikServisIsim = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.tabBilgiIslem = new System.Windows.Forms.TabPage();
             this.tabHastaneBolum = new System.Windows.Forms.TabPage();
             this.tabPersonelBilgi = new System.Windows.Forms.TabPage();
             this.tabAyarlar = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.cbBilgiIslemMalzemeDurum = new System.Windows.Forms.ComboBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.dtpBilgiIslemTarih = new System.Windows.Forms.DateTimePicker();
+            this.btnBilgiIslemTemizle = new System.Windows.Forms.Button();
+            this.btnBilgiIslemEkle = new System.Windows.Forms.Button();
+            this.tbBilgiIslemAdet = new System.Windows.Forms.TextBox();
+            this.tbBilgiIslemSorumluPersonel = new System.Windows.Forms.TextBox();
+            this.tbBilgiIslemSorumluBolum = new System.Windows.Forms.TextBox();
+            this.tbBilgiIslemUrunIsım = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.cbBilgiIslemCikisDurum = new System.Windows.Forms.ComboBox();
+            this.dtpBilgiIslemArizaTarih = new System.Windows.Forms.DateTimePicker();
+            this.btnBilgiIslemArizaCikis = new System.Windows.Forms.Button();
+            this.btnBilgiIslemArizaTemizle = new System.Windows.Forms.Button();
+            this.cbBilgiIslemGonderilecekBirim = new System.Windows.Forms.ComboBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.tbBilgiIslemArizaUrunIsım = new System.Windows.Forms.TextBox();
+            this.tbBilgiIslemArizaAdet = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.DataGridBilgiIslem = new System.Windows.Forms.DataGridView();
+            this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.TabControlEnvanter.SuspendLayout();
             this.tabEnvanter.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -87,7 +159,19 @@ namespace HastaneEnvanterYonetimSistemi
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.tabTeknikServis.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridTeknikServis)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.tabBilgiIslem.SuspendLayout();
             this.tabAyarlar.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridBilgiIslem)).BeginInit();
             this.SuspendLayout();
             // 
             // TabControlEnvanter
@@ -105,7 +189,6 @@ namespace HastaneEnvanterYonetimSistemi
             this.TabControlEnvanter.SelectedIndex = 0;
             this.TabControlEnvanter.Size = new System.Drawing.Size(1437, 784);
             this.TabControlEnvanter.TabIndex = 1;
-            this.TabControlEnvanter.Visible = false;
             // 
             // tabEnvanter
             // 
@@ -133,36 +216,36 @@ namespace HastaneEnvanterYonetimSistemi
             // DataGridEnvanter
             // 
             this.DataGridEnvanter.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridEnvanter.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridEnvanter.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DataGridEnvanter.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridEnvanter.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Sil});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridEnvanter.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridEnvanter.DefaultCellStyle = dataGridViewCellStyle5;
             this.DataGridEnvanter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataGridEnvanter.Location = new System.Drawing.Point(0, 0);
             this.DataGridEnvanter.Name = "DataGridEnvanter";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridEnvanter.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridEnvanter.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DataGridEnvanter.RowHeadersWidth = 51;
             this.DataGridEnvanter.RowTemplate.Height = 24;
             this.DataGridEnvanter.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -451,24 +534,6 @@ namespace HastaneEnvanterYonetimSistemi
             this.btnArizaGonder.UseVisualStyleBackColor = false;
             this.btnArizaGonder.Click += new System.EventHandler(this.btnArizaGonder_Click);
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(98, 149);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 20);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Adet:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(68, 90);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(86, 20);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "Ürün İsmi:";
-            // 
             // btnArizaTemizle
             // 
             this.btnArizaTemizle.BackColor = System.Drawing.Color.Gray;
@@ -494,15 +559,6 @@ namespace HastaneEnvanterYonetimSistemi
             this.cbArizaBirim.TabIndex = 1;
             this.cbArizaBirim.Text = "Arıza Birimi";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(15, 267);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(138, 20);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Gönderim Sebebi";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -512,6 +568,15 @@ namespace HastaneEnvanterYonetimSistemi
             this.label8.TabIndex = 15;
             this.label8.Text = "Tarih:";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(15, 267);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(138, 20);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Gönderim Sebebi";
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -520,15 +585,6 @@ namespace HastaneEnvanterYonetimSistemi
             this.label13.Size = new System.Drawing.Size(157, 20);
             this.label13.TabIndex = 25;
             this.label13.Text = "Gönderilecek Birim:";
-            // 
-            // tbArizaGonderimSebebi
-            // 
-            this.tbArizaGonderimSebebi.BackColor = System.Drawing.Color.DimGray;
-            this.tbArizaGonderimSebebi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbArizaGonderimSebebi.Location = new System.Drawing.Point(184, 264);
-            this.tbArizaGonderimSebebi.Name = "tbArizaGonderimSebebi";
-            this.tbArizaGonderimSebebi.Size = new System.Drawing.Size(192, 27);
-            this.tbArizaGonderimSebebi.TabIndex = 20;
             // 
             // tbArizaUrunİsim
             // 
@@ -548,9 +604,39 @@ namespace HastaneEnvanterYonetimSistemi
             this.tbArizaAdet.Size = new System.Drawing.Size(192, 27);
             this.tbArizaAdet.TabIndex = 21;
             // 
+            // tbArizaGonderimSebebi
+            // 
+            this.tbArizaGonderimSebebi.BackColor = System.Drawing.Color.DimGray;
+            this.tbArizaGonderimSebebi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbArizaGonderimSebebi.Location = new System.Drawing.Point(184, 264);
+            this.tbArizaGonderimSebebi.Name = "tbArizaGonderimSebebi";
+            this.tbArizaGonderimSebebi.Size = new System.Drawing.Size(192, 27);
+            this.tbArizaGonderimSebebi.TabIndex = 20;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(98, 149);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 20);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Adet:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(68, 90);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(86, 20);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "Ürün İsmi:";
+            // 
             // tabTeknikServis
             // 
             this.tabTeknikServis.BackColor = System.Drawing.Color.Gray;
+            this.tabTeknikServis.Controls.Add(this.DataGridTeknikServis);
+            this.tabTeknikServis.Controls.Add(this.groupBox6);
+            this.tabTeknikServis.Controls.Add(this.panel4);
             this.tabTeknikServis.Location = new System.Drawing.Point(4, 29);
             this.tabTeknikServis.Name = "tabTeknikServis";
             this.tabTeknikServis.Padding = new System.Windows.Forms.Padding(3);
@@ -558,9 +644,396 @@ namespace HastaneEnvanterYonetimSistemi
             this.tabTeknikServis.TabIndex = 1;
             this.tabTeknikServis.Text = "Teknik Servis";
             // 
+            // DataGridTeknikServis
+            // 
+            this.DataGridTeknikServis.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridTeknikServis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridTeknikServis.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewButtonColumn1});
+            this.DataGridTeknikServis.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataGridTeknikServis.Location = new System.Drawing.Point(411, 103);
+            this.DataGridTeknikServis.Name = "DataGridTeknikServis";
+            this.DataGridTeknikServis.RowHeadersWidth = 51;
+            this.DataGridTeknikServis.RowTemplate.Height = 24;
+            this.DataGridTeknikServis.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DataGridTeknikServis.Size = new System.Drawing.Size(1015, 645);
+            this.DataGridTeknikServis.TabIndex = 3;
+            // 
+            // dataGridViewButtonColumn1
+            // 
+            this.dataGridViewButtonColumn1.HeaderText = "";
+            this.dataGridViewButtonColumn1.MinimumWidth = 6;
+            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
+            this.dataGridViewButtonColumn1.Text = "Sil";
+            this.dataGridViewButtonColumn1.UseColumnTextForButtonValue = true;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.BackColor = System.Drawing.Color.DarkGray;
+            this.groupBox6.Controls.Add(this.label25);
+            this.groupBox6.Controls.Add(this.comboBox3);
+            this.groupBox6.Controls.Add(this.label26);
+            this.groupBox6.Controls.Add(this.comboBox4);
+            this.groupBox6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox6.Location = new System.Drawing.Point(411, 3);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(1015, 100);
+            this.groupBox6.TabIndex = 2;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Sıralama";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label25.Location = new System.Drawing.Point(491, 52);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(129, 20);
+            this.label25.TabIndex = 15;
+            this.label25.Text = "Sıralama Ölçütü";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(650, 44);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(148, 28);
+            this.comboBox3.TabIndex = 14;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label26.Location = new System.Drawing.Point(54, 52);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(129, 20);
+            this.label26.TabIndex = 13;
+            this.label26.Text = "Sıralama Ölçütü";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(233, 44);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(148, 28);
+            this.comboBox4.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.groupBox5);
+            this.panel4.Controls.Add(this.groupBox4);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(408, 745);
+            this.panel4.TabIndex = 0;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.Color.DarkGray;
+            this.groupBox5.Controls.Add(this.cbTSArizaCikisDurum);
+            this.groupBox5.Controls.Add(this.dtpTSArizaTarih);
+            this.groupBox5.Controls.Add(this.btnTSArizaCikis);
+            this.groupBox5.Controls.Add(this.btnTSArizaTemizle);
+            this.groupBox5.Controls.Add(this.cbTSArizaGonderilecekBirim);
+            this.groupBox5.Controls.Add(this.label20);
+            this.groupBox5.Controls.Add(this.label21);
+            this.groupBox5.Controls.Add(this.label22);
+            this.groupBox5.Controls.Add(this.tbTSArizaCikis);
+            this.groupBox5.Controls.Add(this.tbTSArizaAdet);
+            this.groupBox5.Controls.Add(this.label23);
+            this.groupBox5.Controls.Add(this.label24);
+            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox5.Location = new System.Drawing.Point(0, 262);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(408, 483);
+            this.groupBox5.TabIndex = 2;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Arama ve Listeleme";
+            // 
+            // cbTSArizaCikisDurum
+            // 
+            this.cbTSArizaCikisDurum.BackColor = System.Drawing.SystemColors.Window;
+            this.cbTSArizaCikisDurum.FormattingEnabled = true;
+            this.cbTSArizaCikisDurum.Items.AddRange(new object[] {
+            "Teknik Servis",
+            "Bilgi İşlem"});
+            this.cbTSArizaCikisDurum.Location = new System.Drawing.Point(184, 264);
+            this.cbTSArizaCikisDurum.Name = "cbTSArizaCikisDurum";
+            this.cbTSArizaCikisDurum.Size = new System.Drawing.Size(192, 28);
+            this.cbTSArizaCikisDurum.TabIndex = 27;
+            this.cbTSArizaCikisDurum.Text = "Arıza Birimi";
+            // 
+            // dtpTSArizaTarih
+            // 
+            this.dtpTSArizaTarih.Location = new System.Drawing.Point(184, 205);
+            this.dtpTSArizaTarih.Name = "dtpTSArizaTarih";
+            this.dtpTSArizaTarih.Size = new System.Drawing.Size(193, 27);
+            this.dtpTSArizaTarih.TabIndex = 26;
+            // 
+            // btnTSArizaCikis
+            // 
+            this.btnTSArizaCikis.BackColor = System.Drawing.Color.Gray;
+            this.btnTSArizaCikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnTSArizaCikis.Location = new System.Drawing.Point(184, 382);
+            this.btnTSArizaCikis.Name = "btnTSArizaCikis";
+            this.btnTSArizaCikis.Size = new System.Drawing.Size(192, 44);
+            this.btnTSArizaCikis.TabIndex = 23;
+            this.btnTSArizaCikis.Text = "Arıza Çıkış";
+            this.btnTSArizaCikis.UseVisualStyleBackColor = false;
+            // 
+            // btnTSArizaTemizle
+            // 
+            this.btnTSArizaTemizle.BackColor = System.Drawing.Color.Gray;
+            this.btnTSArizaTemizle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnTSArizaTemizle.Location = new System.Drawing.Point(11, 382);
+            this.btnTSArizaTemizle.Name = "btnTSArizaTemizle";
+            this.btnTSArizaTemizle.Size = new System.Drawing.Size(143, 44);
+            this.btnTSArizaTemizle.TabIndex = 24;
+            this.btnTSArizaTemizle.Text = "Temizle";
+            this.btnTSArizaTemizle.UseVisualStyleBackColor = false;
+            // 
+            // cbTSArizaGonderilecekBirim
+            // 
+            this.cbTSArizaGonderilecekBirim.BackColor = System.Drawing.SystemColors.Window;
+            this.cbTSArizaGonderilecekBirim.FormattingEnabled = true;
+            this.cbTSArizaGonderilecekBirim.Items.AddRange(new object[] {
+            "Teknik Servis",
+            "Bilgi İşlem"});
+            this.cbTSArizaGonderilecekBirim.Location = new System.Drawing.Point(184, 327);
+            this.cbTSArizaGonderilecekBirim.Name = "cbTSArizaGonderilecekBirim";
+            this.cbTSArizaGonderilecekBirim.Size = new System.Drawing.Size(192, 28);
+            this.cbTSArizaGonderilecekBirim.TabIndex = 1;
+            this.cbTSArizaGonderilecekBirim.Text = "Arıza Birimi";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(94, 208);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(52, 20);
+            this.label20.TabIndex = 15;
+            this.label20.Text = "Tarih:";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(15, 267);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(138, 20);
+            this.label21.TabIndex = 16;
+            this.label21.Text = "Gönderim Sebebi";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(8, 330);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(157, 20);
+            this.label22.TabIndex = 25;
+            this.label22.Text = "Gönderilecek Birim:";
+            // 
+            // tbTSArizaCikis
+            // 
+            this.tbTSArizaCikis.BackColor = System.Drawing.Color.DimGray;
+            this.tbTSArizaCikis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbTSArizaCikis.Location = new System.Drawing.Point(184, 87);
+            this.tbTSArizaCikis.Name = "tbTSArizaCikis";
+            this.tbTSArizaCikis.Size = new System.Drawing.Size(192, 27);
+            this.tbTSArizaCikis.TabIndex = 18;
+            // 
+            // tbTSArizaAdet
+            // 
+            this.tbTSArizaAdet.BackColor = System.Drawing.Color.DimGray;
+            this.tbTSArizaAdet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbTSArizaAdet.Location = new System.Drawing.Point(184, 146);
+            this.tbTSArizaAdet.Name = "tbTSArizaAdet";
+            this.tbTSArizaAdet.Size = new System.Drawing.Size(192, 27);
+            this.tbTSArizaAdet.TabIndex = 21;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(98, 149);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(48, 20);
+            this.label23.TabIndex = 14;
+            this.label23.Text = "Adet:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(68, 90);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(86, 20);
+            this.label24.TabIndex = 13;
+            this.label24.Text = "Ürün İsmi:";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.DarkGray;
+            this.groupBox4.Controls.Add(this.cbTeknikServisMalzemeDurum);
+            this.groupBox4.Controls.Add(this.label6);
+            this.groupBox4.Controls.Add(this.dtpTeknikServisTarih);
+            this.groupBox4.Controls.Add(this.btnTeknikServisTemizle);
+            this.groupBox4.Controls.Add(this.btnTeknikServisEkle);
+            this.groupBox4.Controls.Add(this.tbTeknikServisAdet);
+            this.groupBox4.Controls.Add(this.tbTeknikServisSorumluPersonel);
+            this.groupBox4.Controls.Add(this.tbTeknikServisSorumluBolum);
+            this.groupBox4.Controls.Add(this.tbTeknikServisIsim);
+            this.groupBox4.Controls.Add(this.label15);
+            this.groupBox4.Controls.Add(this.label16);
+            this.groupBox4.Controls.Add(this.label17);
+            this.groupBox4.Controls.Add(this.label18);
+            this.groupBox4.Controls.Add(this.label19);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox4.Location = new System.Drawing.Point(0, 0);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(408, 537);
+            this.groupBox4.TabIndex = 1;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Teknik Servis Giriş";
+            // 
+            // cbTeknikServisMalzemeDurum
+            // 
+            this.cbTeknikServisMalzemeDurum.FormattingEnabled = true;
+            this.cbTeknikServisMalzemeDurum.Items.AddRange(new object[] {
+            "Sarf",
+            "Demirbaş"});
+            this.cbTeknikServisMalzemeDurum.Location = new System.Drawing.Point(184, 246);
+            this.cbTeknikServisMalzemeDurum.Name = "cbTeknikServisMalzemeDurum";
+            this.cbTeknikServisMalzemeDurum.Size = new System.Drawing.Size(192, 28);
+            this.cbTeknikServisMalzemeDurum.TabIndex = 1;
+            this.cbTeknikServisMalzemeDurum.Text = "Sarf";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 250);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(142, 20);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Malzeme Durumu";
+            // 
+            // dtpTeknikServisTarih
+            // 
+            this.dtpTeknikServisTarih.Location = new System.Drawing.Point(184, 190);
+            this.dtpTeknikServisTarih.Name = "dtpTeknikServisTarih";
+            this.dtpTeknikServisTarih.Size = new System.Drawing.Size(193, 27);
+            this.dtpTeknikServisTarih.TabIndex = 27;
+            // 
+            // btnTeknikServisTemizle
+            // 
+            this.btnTeknikServisTemizle.BackColor = System.Drawing.Color.Gray;
+            this.btnTeknikServisTemizle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnTeknikServisTemizle.Location = new System.Drawing.Point(11, 419);
+            this.btnTeknikServisTemizle.Name = "btnTeknikServisTemizle";
+            this.btnTeknikServisTemizle.Size = new System.Drawing.Size(143, 44);
+            this.btnTeknikServisTemizle.TabIndex = 12;
+            this.btnTeknikServisTemizle.Text = "Temizle";
+            this.btnTeknikServisTemizle.UseVisualStyleBackColor = false;
+            // 
+            // btnTeknikServisEkle
+            // 
+            this.btnTeknikServisEkle.BackColor = System.Drawing.Color.Gray;
+            this.btnTeknikServisEkle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnTeknikServisEkle.Location = new System.Drawing.Point(184, 419);
+            this.btnTeknikServisEkle.Name = "btnTeknikServisEkle";
+            this.btnTeknikServisEkle.Size = new System.Drawing.Size(192, 44);
+            this.btnTeknikServisEkle.TabIndex = 11;
+            this.btnTeknikServisEkle.Text = "Ekle";
+            this.btnTeknikServisEkle.UseVisualStyleBackColor = false;
+            // 
+            // tbTeknikServisAdet
+            // 
+            this.tbTeknikServisAdet.BackColor = System.Drawing.Color.DimGray;
+            this.tbTeknikServisAdet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbTeknikServisAdet.Location = new System.Drawing.Point(184, 134);
+            this.tbTeknikServisAdet.Name = "tbTeknikServisAdet";
+            this.tbTeknikServisAdet.Size = new System.Drawing.Size(192, 27);
+            this.tbTeknikServisAdet.TabIndex = 9;
+            // 
+            // tbTeknikServisSorumluPersonel
+            // 
+            this.tbTeknikServisSorumluPersonel.BackColor = System.Drawing.Color.DimGray;
+            this.tbTeknikServisSorumluPersonel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbTeknikServisSorumluPersonel.Location = new System.Drawing.Point(184, 302);
+            this.tbTeknikServisSorumluPersonel.Name = "tbTeknikServisSorumluPersonel";
+            this.tbTeknikServisSorumluPersonel.Size = new System.Drawing.Size(192, 27);
+            this.tbTeknikServisSorumluPersonel.TabIndex = 8;
+            // 
+            // tbTeknikServisSorumluBolum
+            // 
+            this.tbTeknikServisSorumluBolum.BackColor = System.Drawing.Color.DimGray;
+            this.tbTeknikServisSorumluBolum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbTeknikServisSorumluBolum.Location = new System.Drawing.Point(184, 358);
+            this.tbTeknikServisSorumluBolum.Name = "tbTeknikServisSorumluBolum";
+            this.tbTeknikServisSorumluBolum.Size = new System.Drawing.Size(192, 27);
+            this.tbTeknikServisSorumluBolum.TabIndex = 7;
+            // 
+            // tbTeknikServisIsim
+            // 
+            this.tbTeknikServisIsim.BackColor = System.Drawing.Color.DimGray;
+            this.tbTeknikServisIsim.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbTeknikServisIsim.Location = new System.Drawing.Point(184, 78);
+            this.tbTeknikServisIsim.Name = "tbTeknikServisIsim";
+            this.tbTeknikServisIsim.Size = new System.Drawing.Size(192, 27);
+            this.tbTeknikServisIsim.TabIndex = 5;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(25, 360);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(129, 20);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "Sorumlu Bölüm:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(7, 305);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(147, 20);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Sorumlu Personel:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(102, 195);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(52, 20);
+            this.label17.TabIndex = 2;
+            this.label17.Text = "Tarih:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(106, 140);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(48, 20);
+            this.label18.TabIndex = 1;
+            this.label18.Text = "Adet:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(68, 85);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(86, 20);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "Ürün İsmi:";
+            // 
             // tabBilgiIslem
             // 
             this.tabBilgiIslem.BackColor = System.Drawing.Color.Gray;
+            this.tabBilgiIslem.Controls.Add(this.DataGridBilgiIslem);
+            this.tabBilgiIslem.Controls.Add(this.groupBox9);
+            this.tabBilgiIslem.Controls.Add(this.panel5);
             this.tabBilgiIslem.Location = new System.Drawing.Point(4, 29);
             this.tabBilgiIslem.Name = "tabBilgiIslem";
             this.tabBilgiIslem.Padding = new System.Windows.Forms.Padding(3);
@@ -611,6 +1084,390 @@ namespace HastaneEnvanterYonetimSistemi
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.groupBox8);
+            this.panel5.Controls.Add(this.groupBox7);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(3, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(404, 745);
+            this.panel5.TabIndex = 0;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.BackColor = System.Drawing.Color.DarkGray;
+            this.groupBox7.Controls.Add(this.cbBilgiIslemMalzemeDurum);
+            this.groupBox7.Controls.Add(this.label27);
+            this.groupBox7.Controls.Add(this.dtpBilgiIslemTarih);
+            this.groupBox7.Controls.Add(this.btnBilgiIslemTemizle);
+            this.groupBox7.Controls.Add(this.btnBilgiIslemEkle);
+            this.groupBox7.Controls.Add(this.tbBilgiIslemAdet);
+            this.groupBox7.Controls.Add(this.tbBilgiIslemSorumluPersonel);
+            this.groupBox7.Controls.Add(this.tbBilgiIslemSorumluBolum);
+            this.groupBox7.Controls.Add(this.tbBilgiIslemUrunIsım);
+            this.groupBox7.Controls.Add(this.label28);
+            this.groupBox7.Controls.Add(this.label29);
+            this.groupBox7.Controls.Add(this.label30);
+            this.groupBox7.Controls.Add(this.label31);
+            this.groupBox7.Controls.Add(this.label32);
+            this.groupBox7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox7.Location = new System.Drawing.Point(0, 0);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(404, 537);
+            this.groupBox7.TabIndex = 2;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Bilgi İşlem Giriş";
+            // 
+            // cbBilgiIslemMalzemeDurum
+            // 
+            this.cbBilgiIslemMalzemeDurum.FormattingEnabled = true;
+            this.cbBilgiIslemMalzemeDurum.Items.AddRange(new object[] {
+            "Sarf",
+            "Demirbaş"});
+            this.cbBilgiIslemMalzemeDurum.Location = new System.Drawing.Point(184, 246);
+            this.cbBilgiIslemMalzemeDurum.Name = "cbBilgiIslemMalzemeDurum";
+            this.cbBilgiIslemMalzemeDurum.Size = new System.Drawing.Size(192, 28);
+            this.cbBilgiIslemMalzemeDurum.TabIndex = 1;
+            this.cbBilgiIslemMalzemeDurum.Text = "Sarf";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(12, 250);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(142, 20);
+            this.label27.TabIndex = 28;
+            this.label27.Text = "Malzeme Durumu";
+            // 
+            // dtpBilgiIslemTarih
+            // 
+            this.dtpBilgiIslemTarih.Location = new System.Drawing.Point(184, 190);
+            this.dtpBilgiIslemTarih.Name = "dtpBilgiIslemTarih";
+            this.dtpBilgiIslemTarih.Size = new System.Drawing.Size(193, 27);
+            this.dtpBilgiIslemTarih.TabIndex = 27;
+            // 
+            // btnBilgiIslemTemizle
+            // 
+            this.btnBilgiIslemTemizle.BackColor = System.Drawing.Color.Gray;
+            this.btnBilgiIslemTemizle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBilgiIslemTemizle.Location = new System.Drawing.Point(11, 419);
+            this.btnBilgiIslemTemizle.Name = "btnBilgiIslemTemizle";
+            this.btnBilgiIslemTemizle.Size = new System.Drawing.Size(143, 44);
+            this.btnBilgiIslemTemizle.TabIndex = 12;
+            this.btnBilgiIslemTemizle.Text = "Temizle";
+            this.btnBilgiIslemTemizle.UseVisualStyleBackColor = false;
+            // 
+            // btnBilgiIslemEkle
+            // 
+            this.btnBilgiIslemEkle.BackColor = System.Drawing.Color.Gray;
+            this.btnBilgiIslemEkle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBilgiIslemEkle.Location = new System.Drawing.Point(184, 419);
+            this.btnBilgiIslemEkle.Name = "btnBilgiIslemEkle";
+            this.btnBilgiIslemEkle.Size = new System.Drawing.Size(192, 44);
+            this.btnBilgiIslemEkle.TabIndex = 11;
+            this.btnBilgiIslemEkle.Text = "Ekle";
+            this.btnBilgiIslemEkle.UseVisualStyleBackColor = false;
+            // 
+            // tbBilgiIslemAdet
+            // 
+            this.tbBilgiIslemAdet.BackColor = System.Drawing.Color.DimGray;
+            this.tbBilgiIslemAdet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbBilgiIslemAdet.Location = new System.Drawing.Point(184, 134);
+            this.tbBilgiIslemAdet.Name = "tbBilgiIslemAdet";
+            this.tbBilgiIslemAdet.Size = new System.Drawing.Size(192, 27);
+            this.tbBilgiIslemAdet.TabIndex = 9;
+            // 
+            // tbBilgiIslemSorumluPersonel
+            // 
+            this.tbBilgiIslemSorumluPersonel.BackColor = System.Drawing.Color.DimGray;
+            this.tbBilgiIslemSorumluPersonel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbBilgiIslemSorumluPersonel.Location = new System.Drawing.Point(184, 302);
+            this.tbBilgiIslemSorumluPersonel.Name = "tbBilgiIslemSorumluPersonel";
+            this.tbBilgiIslemSorumluPersonel.Size = new System.Drawing.Size(192, 27);
+            this.tbBilgiIslemSorumluPersonel.TabIndex = 8;
+            // 
+            // tbBilgiIslemSorumluBolum
+            // 
+            this.tbBilgiIslemSorumluBolum.BackColor = System.Drawing.Color.DimGray;
+            this.tbBilgiIslemSorumluBolum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbBilgiIslemSorumluBolum.Location = new System.Drawing.Point(184, 358);
+            this.tbBilgiIslemSorumluBolum.Name = "tbBilgiIslemSorumluBolum";
+            this.tbBilgiIslemSorumluBolum.Size = new System.Drawing.Size(192, 27);
+            this.tbBilgiIslemSorumluBolum.TabIndex = 7;
+            // 
+            // tbBilgiIslemUrunIsım
+            // 
+            this.tbBilgiIslemUrunIsım.BackColor = System.Drawing.Color.DimGray;
+            this.tbBilgiIslemUrunIsım.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbBilgiIslemUrunIsım.Location = new System.Drawing.Point(184, 78);
+            this.tbBilgiIslemUrunIsım.Name = "tbBilgiIslemUrunIsım";
+            this.tbBilgiIslemUrunIsım.Size = new System.Drawing.Size(192, 27);
+            this.tbBilgiIslemUrunIsım.TabIndex = 5;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(25, 360);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(129, 20);
+            this.label28.TabIndex = 4;
+            this.label28.Text = "Sorumlu Bölüm:";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(7, 305);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(147, 20);
+            this.label29.TabIndex = 3;
+            this.label29.Text = "Sorumlu Personel:";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(102, 195);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(52, 20);
+            this.label30.TabIndex = 2;
+            this.label30.Text = "Tarih:";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(106, 140);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(48, 20);
+            this.label31.TabIndex = 1;
+            this.label31.Text = "Adet:";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(68, 85);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(86, 20);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "Ürün İsmi:";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.BackColor = System.Drawing.Color.DarkGray;
+            this.groupBox8.Controls.Add(this.cbBilgiIslemCikisDurum);
+            this.groupBox8.Controls.Add(this.dtpBilgiIslemArizaTarih);
+            this.groupBox8.Controls.Add(this.btnBilgiIslemArizaCikis);
+            this.groupBox8.Controls.Add(this.btnBilgiIslemArizaTemizle);
+            this.groupBox8.Controls.Add(this.cbBilgiIslemGonderilecekBirim);
+            this.groupBox8.Controls.Add(this.label33);
+            this.groupBox8.Controls.Add(this.label34);
+            this.groupBox8.Controls.Add(this.label35);
+            this.groupBox8.Controls.Add(this.tbBilgiIslemArizaUrunIsım);
+            this.groupBox8.Controls.Add(this.tbBilgiIslemArizaAdet);
+            this.groupBox8.Controls.Add(this.label36);
+            this.groupBox8.Controls.Add(this.label37);
+            this.groupBox8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox8.Location = new System.Drawing.Point(0, 262);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(404, 483);
+            this.groupBox8.TabIndex = 3;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Arama ve Listeleme";
+            // 
+            // cbBilgiIslemCikisDurum
+            // 
+            this.cbBilgiIslemCikisDurum.BackColor = System.Drawing.SystemColors.Window;
+            this.cbBilgiIslemCikisDurum.FormattingEnabled = true;
+            this.cbBilgiIslemCikisDurum.Items.AddRange(new object[] {
+            "Teknik Servis",
+            "Bilgi İşlem"});
+            this.cbBilgiIslemCikisDurum.Location = new System.Drawing.Point(184, 264);
+            this.cbBilgiIslemCikisDurum.Name = "cbBilgiIslemCikisDurum";
+            this.cbBilgiIslemCikisDurum.Size = new System.Drawing.Size(192, 28);
+            this.cbBilgiIslemCikisDurum.TabIndex = 27;
+            this.cbBilgiIslemCikisDurum.Text = "Arıza Birimi";
+            // 
+            // dtpBilgiIslemArizaTarih
+            // 
+            this.dtpBilgiIslemArizaTarih.Location = new System.Drawing.Point(184, 205);
+            this.dtpBilgiIslemArizaTarih.Name = "dtpBilgiIslemArizaTarih";
+            this.dtpBilgiIslemArizaTarih.Size = new System.Drawing.Size(193, 27);
+            this.dtpBilgiIslemArizaTarih.TabIndex = 26;
+            // 
+            // btnBilgiIslemArizaCikis
+            // 
+            this.btnBilgiIslemArizaCikis.BackColor = System.Drawing.Color.Gray;
+            this.btnBilgiIslemArizaCikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBilgiIslemArizaCikis.Location = new System.Drawing.Point(184, 382);
+            this.btnBilgiIslemArizaCikis.Name = "btnBilgiIslemArizaCikis";
+            this.btnBilgiIslemArizaCikis.Size = new System.Drawing.Size(192, 44);
+            this.btnBilgiIslemArizaCikis.TabIndex = 23;
+            this.btnBilgiIslemArizaCikis.Text = "Arıza Çıkış";
+            this.btnBilgiIslemArizaCikis.UseVisualStyleBackColor = false;
+            // 
+            // btnBilgiIslemArizaTemizle
+            // 
+            this.btnBilgiIslemArizaTemizle.BackColor = System.Drawing.Color.Gray;
+            this.btnBilgiIslemArizaTemizle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBilgiIslemArizaTemizle.Location = new System.Drawing.Point(11, 382);
+            this.btnBilgiIslemArizaTemizle.Name = "btnBilgiIslemArizaTemizle";
+            this.btnBilgiIslemArizaTemizle.Size = new System.Drawing.Size(143, 44);
+            this.btnBilgiIslemArizaTemizle.TabIndex = 24;
+            this.btnBilgiIslemArizaTemizle.Text = "Temizle";
+            this.btnBilgiIslemArizaTemizle.UseVisualStyleBackColor = false;
+            // 
+            // cbBilgiIslemGonderilecekBirim
+            // 
+            this.cbBilgiIslemGonderilecekBirim.BackColor = System.Drawing.SystemColors.Window;
+            this.cbBilgiIslemGonderilecekBirim.FormattingEnabled = true;
+            this.cbBilgiIslemGonderilecekBirim.Items.AddRange(new object[] {
+            "Teknik Servis",
+            "Bilgi İşlem"});
+            this.cbBilgiIslemGonderilecekBirim.Location = new System.Drawing.Point(184, 327);
+            this.cbBilgiIslemGonderilecekBirim.Name = "cbBilgiIslemGonderilecekBirim";
+            this.cbBilgiIslemGonderilecekBirim.Size = new System.Drawing.Size(192, 28);
+            this.cbBilgiIslemGonderilecekBirim.TabIndex = 1;
+            this.cbBilgiIslemGonderilecekBirim.Text = "Arıza Birimi";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(94, 208);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(52, 20);
+            this.label33.TabIndex = 15;
+            this.label33.Text = "Tarih:";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(15, 267);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(138, 20);
+            this.label34.TabIndex = 16;
+            this.label34.Text = "Gönderim Sebebi";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(8, 330);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(157, 20);
+            this.label35.TabIndex = 25;
+            this.label35.Text = "Gönderilecek Birim:";
+            // 
+            // tbBilgiIslemArizaUrunIsım
+            // 
+            this.tbBilgiIslemArizaUrunIsım.BackColor = System.Drawing.Color.DimGray;
+            this.tbBilgiIslemArizaUrunIsım.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbBilgiIslemArizaUrunIsım.Location = new System.Drawing.Point(184, 87);
+            this.tbBilgiIslemArizaUrunIsım.Name = "tbBilgiIslemArizaUrunIsım";
+            this.tbBilgiIslemArizaUrunIsım.Size = new System.Drawing.Size(192, 27);
+            this.tbBilgiIslemArizaUrunIsım.TabIndex = 18;
+            // 
+            // tbBilgiIslemArizaAdet
+            // 
+            this.tbBilgiIslemArizaAdet.BackColor = System.Drawing.Color.DimGray;
+            this.tbBilgiIslemArizaAdet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbBilgiIslemArizaAdet.Location = new System.Drawing.Point(184, 146);
+            this.tbBilgiIslemArizaAdet.Name = "tbBilgiIslemArizaAdet";
+            this.tbBilgiIslemArizaAdet.Size = new System.Drawing.Size(192, 27);
+            this.tbBilgiIslemArizaAdet.TabIndex = 21;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(98, 149);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(48, 20);
+            this.label36.TabIndex = 14;
+            this.label36.Text = "Adet:";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(68, 90);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(86, 20);
+            this.label37.TabIndex = 13;
+            this.label37.Text = "Ürün İsmi:";
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.BackColor = System.Drawing.Color.DarkGray;
+            this.groupBox9.Controls.Add(this.label38);
+            this.groupBox9.Controls.Add(this.comboBox5);
+            this.groupBox9.Controls.Add(this.label39);
+            this.groupBox9.Controls.Add(this.comboBox6);
+            this.groupBox9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox9.Location = new System.Drawing.Point(407, 3);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(1019, 100);
+            this.groupBox9.TabIndex = 3;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Sıralama";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label38.Location = new System.Drawing.Point(491, 52);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(129, 20);
+            this.label38.TabIndex = 15;
+            this.label38.Text = "Sıralama Ölçütü";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(650, 44);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(148, 28);
+            this.comboBox5.TabIndex = 14;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label39.Location = new System.Drawing.Point(54, 52);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(129, 20);
+            this.label39.TabIndex = 13;
+            this.label39.Text = "Sıralama Ölçütü";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(233, 44);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(148, 28);
+            this.comboBox6.TabIndex = 0;
+            // 
+            // DataGridBilgiIslem
+            // 
+            this.DataGridBilgiIslem.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridBilgiIslem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridBilgiIslem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewButtonColumn2});
+            this.DataGridBilgiIslem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataGridBilgiIslem.Location = new System.Drawing.Point(407, 103);
+            this.DataGridBilgiIslem.Name = "DataGridBilgiIslem";
+            this.DataGridBilgiIslem.RowHeadersWidth = 51;
+            this.DataGridBilgiIslem.RowTemplate.Height = 24;
+            this.DataGridBilgiIslem.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DataGridBilgiIslem.Size = new System.Drawing.Size(1019, 645);
+            this.DataGridBilgiIslem.TabIndex = 4;
+            // 
+            // dataGridViewButtonColumn2
+            // 
+            this.dataGridViewButtonColumn2.HeaderText = "";
+            this.dataGridViewButtonColumn2.MinimumWidth = 6;
+            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
+            this.dataGridViewButtonColumn2.Text = "Sil";
+            this.dataGridViewButtonColumn2.UseColumnTextForButtonValue = true;
+            // 
             // FrmEnvanter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -635,7 +1492,25 @@ namespace HastaneEnvanterYonetimSistemi
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.tabTeknikServis.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridTeknikServis)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.tabBilgiIslem.ResumeLayout(false);
             this.tabAyarlar.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridBilgiIslem)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -687,6 +1562,78 @@ namespace HastaneEnvanterYonetimSistemi
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cbEnvanterMalzemeDurum;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.ComboBox cbTeknikServisMalzemeDurum;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker dtpTeknikServisTarih;
+        private System.Windows.Forms.Button btnTeknikServisTemizle;
+        private System.Windows.Forms.Button btnTeknikServisEkle;
+        private System.Windows.Forms.TextBox tbTeknikServisAdet;
+        private System.Windows.Forms.TextBox tbTeknikServisSorumluPersonel;
+        private System.Windows.Forms.TextBox tbTeknikServisSorumluBolum;
+        private System.Windows.Forms.TextBox tbTeknikServisIsim;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.DataGridView DataGridTeknikServis;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn1;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.ComboBox cbTSArizaCikisDurum;
+        private System.Windows.Forms.DateTimePicker dtpTSArizaTarih;
+        private System.Windows.Forms.Button btnTSArizaCikis;
+        private System.Windows.Forms.Button btnTSArizaTemizle;
+        private System.Windows.Forms.ComboBox cbTSArizaGonderilecekBirim;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox tbTSArizaCikis;
+        private System.Windows.Forms.TextBox tbTSArizaAdet;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.DataGridView DataGridBilgiIslem;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn2;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.ComboBox cbBilgiIslemCikisDurum;
+        private System.Windows.Forms.DateTimePicker dtpBilgiIslemArizaTarih;
+        private System.Windows.Forms.Button btnBilgiIslemArizaCikis;
+        private System.Windows.Forms.Button btnBilgiIslemArizaTemizle;
+        private System.Windows.Forms.ComboBox cbBilgiIslemGonderilecekBirim;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.TextBox tbBilgiIslemArizaUrunIsım;
+        private System.Windows.Forms.TextBox tbBilgiIslemArizaAdet;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.ComboBox cbBilgiIslemMalzemeDurum;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.DateTimePicker dtpBilgiIslemTarih;
+        private System.Windows.Forms.Button btnBilgiIslemTemizle;
+        private System.Windows.Forms.Button btnBilgiIslemEkle;
+        private System.Windows.Forms.TextBox tbBilgiIslemAdet;
+        private System.Windows.Forms.TextBox tbBilgiIslemSorumluPersonel;
+        private System.Windows.Forms.TextBox tbBilgiIslemSorumluBolum;
+        private System.Windows.Forms.TextBox tbBilgiIslemUrunIsım;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
     }
 }
 
